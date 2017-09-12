@@ -8,7 +8,7 @@ function* getSome() {
     return "Not Found" and that's just because our IBU happened to fall in a 
     range where the SW API didn't have a person with that ID, just try it again.
   */
-  const person = yield gimme( 'https://swapi.co/api/people/${randy_beer[0].ibu}/');
+  const person = yield gimme( `https://swapi.co/api/people/${randy_beer[0].ibu}/`);
 
   /*
     Typically these would return undefined right away but because we're in a
