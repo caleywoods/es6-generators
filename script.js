@@ -1,3 +1,10 @@
+/*
+  Imagine the getSome() function being written with callbacks and having to nest
+  the Star Wars person fetch inside of the return from the random beer API call.
+
+  Promises made this a little better by being "thenable" but I still don't think
+  the code is as easy to read as this style.
+*/
 function* getSome() {
   /* this api is rate limited by IP */
   const randy_beer = yield gimme( 'https://api.punkapi.com/v2/beers/random' );
