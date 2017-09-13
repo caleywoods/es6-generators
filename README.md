@@ -9,4 +9,5 @@ beer to go fetch a random person from the Star Wars universe by passing the IBU
 value in as the ID of the random person to the [Star Wars API](https://swapi.co/).
 
 Open `index.html` and look at the console to see the result, the page shows
-no data.
+no data. If you want to try the async/await example then uncomment its line in
+`index.html`.
